@@ -9,7 +9,7 @@ const Profile = (props) => {
                     class="avatar"
                 />
                 <p class="name">{username}</p>
-                <p class="tag">{ tag }@pmarica</p>
+                <p class="tag">@{ tag }</p>
                 <p class="location">{location}</p>
             </div>
 
