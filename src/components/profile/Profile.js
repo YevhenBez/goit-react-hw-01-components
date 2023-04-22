@@ -15,16 +15,22 @@ const Profile = (props) => {
 
             <ul class="stats">
                 <li>
-                    <span class="label">Followers</span>
-                    <span class="quantity">{statsFollowers}</span>
+                    <div class="stats__for-li stats__followers">
+                        <div><span class="label">Followers</span></div>
+                        <div><span class="quantity">{statsFollowers}</span></div>
+                    </div>
                 </li>
                 <li>
-                    <span class="label">Views</span>
-                    <span class="quantity">{statsViews}</span>
+                    <div class="stats__for-li stats__views">
+                        <div><span class="label">Views</span></div>
+                        <div><span class="quantity">{statsViews}</span></div>
+                    </div>
                 </li>
                 <li>
-                    <span class="label">Likes</span>
-                    <span class="quantity">{statsLikes}</span>
+                    <div class="stats__for-li stats__Likes">
+                        <div><span class="label">Likes</span></div>
+                        <div><span class="quantity">{statsLikes}</span></div>
+                    </div>
                 </li>
             </ul>
         </div>

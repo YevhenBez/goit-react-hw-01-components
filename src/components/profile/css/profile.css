@@ -1,3 +1,75 @@
+.profile {
+    padding-top: 80px;
+
+    border: 5px solid rgb(190, 198, 198);
+
+    border-radius: 10px;
+}
+
+.description {
+    text-align: center;
+}
+
 .avatar {
     border-radius: 50%;
 }
+
+.name {
+font-size: 50px;
+
+font-weight: 500;
+}
+
+.tag,
+.location {
+    font-weight: 500;
+
+    color: darkgrey;
+}
+
+.stats {
+    display: flex;
+    
+    list-style: none;
+
+    text-align: center;
+
+    justify-content: center;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+.stats .li {
+    display: flex;  
+}
+
+.stats__for-li {
+    box-sizing: border-box;
+    border: 5px solid rgb(190, 198, 198);
+    background-color: #daf5f8;
+
+    border-left: 0px;
+    border-bottom: 0px;
+
+    padding: 50px;
+}
+
+.stats__Likes {
+    border-right: 0px;
+}
+
+.label {
+    font-weight: 500;
+
+    margin-bottom: 10px;
+
+    color: darkgrey;
+}
+
+.quantity {
+    font-weight: 700;
+    
+    color: black;
+}
+
