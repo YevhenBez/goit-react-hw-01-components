@@ -1,0 +1,21 @@
+.title {
+    text-align: center;
+
+    text-transform: uppercase;
+}
+
+.stat-list {
+    display: flex;
+
+    list-style: none;
+}
+
+.item {
+    display: flex;
+
+    padding: 30px;
+}
+
+.statistics__label {
+    padding-bottom: 20px;
+}

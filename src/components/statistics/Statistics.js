@@ -6,8 +6,10 @@ const Statistics = (props) => {
 
             <ul class="stat-list">
                 {stats.map(elementOfStats => ( <li key={elementOfStats.id} class="item">
-                    <span class="label">{elementOfStats.label}</span>
-                    <span class="percentage">{elementOfStats.percentage}%</span>
+                    <div>
+                        <div class="statistics__label"><span class="label">{elementOfStats.label}</span></div>
+                        <div><span class="percentage">{elementOfStats.percentage}%</span></div>
+                    </div>
                 </li>))}
                 {/* <li class="item">
                     <span class="label">.mp3</span>
