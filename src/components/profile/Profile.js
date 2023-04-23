@@ -39,4 +39,14 @@ const Profile = (props) => {
     );
 }
 
+Profile.propTypes = {
+    username: PropTypes.string,
+    tag: PropTypes.string,
+    location: PropTypes.string,
+    avatar: PropTypes.string,
+    statsFollowers: PropTypes.number,
+    statsViews: PropTypes.number,
+    statsLikes: PropTypes.number,
+}
+
 export default Profile;
