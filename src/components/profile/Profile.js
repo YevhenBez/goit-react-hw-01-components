@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const Profile = (props) => {
     const { username, tag, location, avatar, statsFollowers, statsViews, statsLikes } = props;
     return (
