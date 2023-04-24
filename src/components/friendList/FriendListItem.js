@@ -6,9 +6,9 @@ const FriendListItem = (props) => {
     const { avatar, name, isOnline } = props;
     return (
         <li class="item">
-            <span class="status"></span>
+            {isOnline ? <span class="status"><AiTwotoneCheckCircle size={16} color="green"/></span> : <span class="status"><AiTwotoneCloseCircle size={16} color="red"/></span>}
             <img class="avatar" src={avatar} alt="User avatar" width="48" />
-            <p class={name}></p>
+            <p class="name">{name}</p>
         </li>
     );
 }
