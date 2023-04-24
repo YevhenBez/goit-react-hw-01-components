@@ -2,6 +2,8 @@ import Profile from './profile/Profile';
 import user from '../components/path/to/user.json';
 import Statistics from './statistics/Statistics';
 import data from '../components/path/to/data.json';
+import FriendList from './friendList/FriendList';
+import friends from '../components/path/to/friends.json';
 
 export const App = () => {
   return (
@@ -27,6 +29,7 @@ export const App = () => {
       />
       <Statistics title="Upload stats" stats={data} />
       <Statistics stats={data} />
+      <FriendList friends={friends} />;
     </div>
   );
 };
