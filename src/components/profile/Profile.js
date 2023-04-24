@@ -3,35 +3,35 @@ import PropTypes from 'prop-types';
 const Profile = (props) => {
     const { username, tag, location, avatar, statsFollowers, statsViews, statsLikes } = props;
     return (
-        <div class="profile">
-            <div class="description">
+        <div className="profile">
+            <div className="description">
                 <img
                     src={avatar}
                     alt="User avatar"
-                    class="avatar"
+                    className="avatar"
                 />
-                <p class="name">{username}</p>
-                <p class="tag">@{ tag }</p>
-                <p class="location">{location}</p>
+                <p className="name">{username}</p>
+                <p className="tag">@{ tag }</p>
+                <p className="location">{location}</p>
             </div>
 
-            <ul class="stats">
+            <ul className="stats">
                 <li>
-                    <div class="stats__for-li stats__followers">
-                        <div><span class="label">Followers</span></div>
-                        <div><span class="quantity">{statsFollowers}</span></div>
+                    <div className="stats__for-li stats__followers">
+                        <div><span className="label">Followers</span></div>
+                        <div><span className="quantity">{statsFollowers}</span></div>
                     </div>
                 </li>
                 <li>
-                    <div class="stats__for-li stats__views">
-                        <div><span class="label">Views</span></div>
-                        <div><span class="quantity">{statsViews}</span></div>
+                    <div className="stats__for-li stats__views">
+                        <div><span className="label">Views</span></div>
+                        <div><span className="quantity">{statsViews}</span></div>
                     </div>
                 </li>
                 <li>
-                    <div class="stats__for-li stats__Likes">
-                        <div><span class="label">Likes</span></div>
-                        <div><span class="quantity">{statsLikes}</span></div>
+                    <div className="stats__for-li stats__Likes">
+                        <div><span className="label">Likes</span></div>
+                        <div><span className="quantity">{statsLikes}</span></div>
                     </div>
                 </li>
             </ul>
