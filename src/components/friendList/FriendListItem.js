@@ -1,4 +1,6 @@
 import PropTypes from 'prop-types';
+import { AiTwotoneCheckCircle } from "react-icons/fa";
+import { AiTwotoneCloseCircle } from "react-icons/fa";
 
 const FriendListItem = (props) => {
     const { avatar, name, isOnline } = props;
