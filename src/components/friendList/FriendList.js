@@ -1,0 +1,1 @@
+import FriendListItem from './FriendListItem';
