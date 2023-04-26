@@ -40,13 +40,13 @@ const Profile = (props) => {
 }
 
 Profile.propTypes = {
-    username: PropTypes.string,
-    tag: PropTypes.string,
-    location: PropTypes.string,
-    avatar: PropTypes.string,
-    statsFollowers: PropTypes.number,
-    statsViews: PropTypes.number,
-    statsLikes: PropTypes.number,
+    username: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
+    statsFollowers: PropTypes.number.isRequired,
+    statsViews: PropTypes.number.isRequired,
+    statsLikes: PropTypes.number.isRequired,
 }
 
 export default Profile;
