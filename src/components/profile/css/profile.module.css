@@ -44,7 +44,7 @@ font-weight: 500;
     display: flex;  
 }
 
-.stats__for-li {
+.stats__forLi {
     box-sizing: border-box;
     border: 5px solid rgb(190, 198, 198);
     background-color: #daf5f8;
@@ -55,9 +55,9 @@ font-weight: 500;
     padding: 50px;
 }
 
-.stats__Likes {
+/* .stats__Likes {
     border-right: 0px;
-}
+} */
 
 .label {
     font-weight: 500;
