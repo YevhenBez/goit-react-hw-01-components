@@ -5,6 +5,7 @@ import './index.css';
 import './components/profile/css/profile.css';
 import './components/statistics/css/statistics.css';
 import './components/friendList/css/friendList.css';
+import './components/transactionHistory/css/transactionHistory.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

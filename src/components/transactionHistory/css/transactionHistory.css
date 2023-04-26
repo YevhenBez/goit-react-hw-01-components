@@ -1,0 +1,29 @@
+table {
+    table-layout: auto;
+    width: 100%;
+    border: 1px solid #978f8f;
+    box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.3);
+}
+
+th {
+    border: 1px solid rgb(230, 228, 228);
+    padding: 30px;
+
+    background-color: #84aed7;
+    color: #ece2e2;
+
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+td {
+    border: 1px solid #d4cdcd;
+    color: #737373;
+    text-align: center;
+
+    padding: 30px;
+}
+
