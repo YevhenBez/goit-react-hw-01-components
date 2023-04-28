@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import FriendListItem from './FriendListItem';
 
 
@@ -15,6 +16,12 @@ const FriendList = (props) => {
             ))}
         </ul>
     );
+}
+
+FriendList.propTypes = {
+    friends: PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.number.isRequired,
+    }))
 }
 
 export default FriendList;
