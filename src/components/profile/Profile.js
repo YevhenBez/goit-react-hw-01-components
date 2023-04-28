@@ -30,7 +30,7 @@ const Profile = (props) => {
                     </div>
                 </li>
                 <li>
-                    <div className={css.stats__forLi}>
+                    <div className={css.stats__forLi+` `+css.stats__Likes}>
                         <div><span className={css.label}>Likes</span></div>
                         <div><span className={css.quantity}>{statsLikes}</span></div>
                     </div>
