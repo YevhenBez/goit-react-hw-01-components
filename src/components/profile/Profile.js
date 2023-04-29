@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import css from './css/profile.module.css';
 
 const Profile = (props) => {
-    const { username, tag, location, avatar, statsFollowers, statsViews, statsLikes } = props;
+    const { username, tag, location, avatar, stats: {followers, views, likes} } = props;
     return (
         <div className={css.profile}>
             <div className={css.description}>
@@ -20,19 +20,19 @@ const Profile = (props) => {
                 <li>
                     <div className={css.stats__forLi}>
                         <div><span className={css.label}>Followers</span></div>
-                        <div><span className={css.quantity}>{statsFollowers}</span></div>
+                        <div><span className={css.quantity}>{followers}</span></div>
                     </div>
                 </li>
                 <li>
                     <div className={css.stats__forLi}>
                         <div><span className={css.label}>Views</span></div>
-                        <div><span className={css.quantity}>{statsViews}</span></div>
+                        <div><span className={css.quantity}>{views}</span></div>
                     </div>
                 </li>
                 <li>
                     <div className={css.stats__forLi+` `+css.stats__Likes}>
                         <div><span className={css.label}>Likes</span></div>
-                        <div><span className={css.quantity}>{statsLikes}</span></div>
+                        <div><span className={css.quantity}>{likes}</span></div>
                     </div>
                 </li>
             </ul>
@@ -45,9 +45,11 @@ Profile.propTypes = {
     tag: PropTypes.string.isRequired,
     location: PropTypes.string.isRequired,
     avatar: PropTypes.string.isRequired,
-    statsFollowers: PropTypes.number.isRequired,
-    statsViews: PropTypes.number.isRequired,
-    statsLikes: PropTypes.number.isRequired,
+    stats: PropTypes.shape({
+        followers: PropTypes.number.isRequired,
+        views: PropTypes.number.isRequired,
+        likes: PropTypes.number.isRequired,
+    }).isRequired
 }
 
 export default Profile;
