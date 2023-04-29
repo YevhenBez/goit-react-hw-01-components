@@ -7,7 +7,16 @@
     box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.3);
 }
 
-.status {
+.statusRed {
+    color: red;
+
+    padding-top: 55px;
+    padding-right: 15px;
+}
+
+.statusGreen {
+    color: green;
+
     padding-top: 55px;
     padding-right: 15px;
 }
