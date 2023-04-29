@@ -5,7 +5,7 @@ const Statistics = (props) => {
     const { title, stats } = props;
     return (
         <section className="statistics">
-            {title && <h2 className={css.title}>Upload stats</h2>}
+            {title && <h2 className={css.title}>{title}</h2>}
 
             <ul className={css.statList}>
                 {stats.map(elementOfStats => (<li key={elementOfStats.id} className={css.item}>
